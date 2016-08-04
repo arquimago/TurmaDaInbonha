@@ -17,7 +17,9 @@ def nome():
 		if flags[x]:
 			inbonha += silabas[x]
 			flags[x] = False
-	
+			if x == 1 or x == len(silabas)-1:
+				flags[len(silabas)-1] = False
+				flags[1] = False
 	return inbonha
 	
 print(nome())
