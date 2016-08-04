@@ -14,7 +14,7 @@ def nome():
 	inbonha = ''
 	for i in range(numero()):
 		x = randint(0,len(silabas))
-		if flags[x] == True:
+		if flags[x]:
 			inbonha += silabas[x]
 			flags[x] = False
 	
